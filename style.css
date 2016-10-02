@@ -1,0 +1,66 @@
+body {
+  background-image: url("https://hd.unsplash.com/photo-1472360666101-23369f0128f1");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0%;
+  font-size: 25px;
+  color: #282727;
+}
+
+#container {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.68);
+  overflow: auto;
+}
+
+.title {
+  font-style: italic;
+}
+
+.singleQuestionDiv {
+  margin: 15px 0px 15px 0px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+#questions {
+  font-size: 25px;
+}
+
+.wordBox {
+  border-radius: 5px;
+  margin: 10px;
+}
+.btn-large {
+  background-color: #218220;
+  border-radius: 10px;
+}
+.checkBtn {
+  font-size: 25px;
+  background: #f44336;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+.icon-green {
+  color: green;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.icon-red {
+  color: red;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .wordBox {
+    display: block;
+  }
+}
