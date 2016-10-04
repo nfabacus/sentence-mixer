@@ -11,7 +11,7 @@ body {
 
 #container {
   width: 100%;
-  padding: 10px;
+  padding: 10%;
   background-color: rgba(255, 255, 255, 0.68);
   overflow: auto;
 }
