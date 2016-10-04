@@ -29,7 +29,7 @@ function split_sentences(originalArr) {
     return newArr;
 }
 
-function scramble_SentencesSplit(originalSentencesSplit){
+function scramble_sentencesSplit(originalSentencesSplit){
   var newArr=[];
   originalSentencesSplit.forEach(function(sentenceSplit){
     var scrambledSentenceSplit = shuffle(sentenceSplit);
@@ -56,7 +56,7 @@ function display_questionDiv(sentenceArr, sentenceID) {
   }
 
   function append_questionDiv(sentenceHTML, sentenceID){
-    $("div#questions").append("<div class='singleQuestionDiv'><b>Question No: "+qNo+"</b><p id='sortable"+sentenceID+"'>"+sentenceHTML+"</p><button class='waves-effect waves-light btn checkBtn' id='checkBtn"+sentenceID+"'>Check</button><span id='response"+sentenceID+"'></span></div>");
+    $("div#questions").append("<div class='singleQuestionDiv'><b>Question No: "+qNo+"</b><p id='sortable"+sentenceID+"'>"+sentenceHTML+"</p><button class='waves-effect waves-light btn checkBtn' id='checkBtn"+sentenceID+"'>Check</button><br><span id='response"+sentenceID+"'></span></div>");
   };
 }
 
@@ -80,17 +80,17 @@ function check_answer(sentenceArr, sentenceID) {
 
 var originalSentences;
 
-function initializeQuiz(sentencesStock) {
+function initialize_quiz(sentencesStock) {
   $("div#questions").empty();
   originalSentences = shuffle(sentencesStock);
   var selectedTenQs = originalSentences.slice(0,10);
   var selectedTenQsSplit = split_sentences(selectedTenQs);
-  var scrambledSentencesSplit = scramble_SentencesSplit(selectedTenQsSplit);
+  var scrambledSentencesSplit = scramble_sentencesSplit(selectedTenQsSplit);
   scrambledSentencesSplit.forEach(display_questionDiv);
 }
 
-initializeQuiz(sentencesStock);
+initialize_quiz(sentencesStock);
 
 $("#shuffleButton").click(function(){
-  initializeQuiz(sentencesStock);
+  initialize_quiz(sentencesStock);
 });
