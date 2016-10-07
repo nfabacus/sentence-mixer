@@ -68,10 +68,14 @@ function check_answer(sentenceArr, sentenceID) {
     yourAnsArr.push(sentenceArr[wordId]);
   });
   if (originalSentencesSplit[sentenceID].join(" ")==yourAnsArr.join(" ")){
+    //display for correct answer
+    $("#checkBtn"+sentenceID).css({"background-color":"#2bbbad"});
     $("#response"+sentenceID).hide();
     $("#response"+sentenceID).html("You are correct!! <i class='material-icons medium icon-green'>done</i>");
     $("#response"+sentenceID).show("fade");
   } else {
+    //display for wrong answer
+    $("#checkBtn"+sentenceID).css({"background-color":"red"});
     $("#response"+sentenceID).hide();
     $("#response"+sentenceID).html("Try again! <i class='material-icons medium icon-red'>bug_report</i>");
     $("#response"+sentenceID).show("fade");

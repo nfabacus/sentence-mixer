@@ -16,7 +16,8 @@ You can use and test it right now at https://sentence-mixer.firebaseapp.com/
 Please note that this app is intended for use by a student who knows mid/advanced level Japanese.
 
 ## Update
-Oct 2, 2016: First MVP is deployed.
+Oct 2, 2016: First MVP is deployed.<br>
+Oct 7, 2016: Button changes its colour depending on the answer.<br>
 
 ## Issues
 - Currently, there is only one 'correct' answer to each sentence question.  But, actually, some words can be swapped around and the sentence can be grammatically correct.  I hope to address this issue later to accept different answer options.  
